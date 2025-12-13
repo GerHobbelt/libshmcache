@@ -86,7 +86,7 @@ rm -rf %{buildroot}
 /usr/bin/shmcache_remove_all
 
 %files config
-/etc/libshmcache.conf
+%config(noreplace) /etc/libshmcache.conf
 
 %files devel
 %defattr(-,root,root,-)
