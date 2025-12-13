@@ -6,12 +6,12 @@ website: https://github.com/happyfish100/libshmcache
 
 # step 1. compile && install libfastcommon
 git clone https://github.com/happyfish100/libfastcommon
-cd libfastcommon && ./make.sh && sudo ./make.sh install
+cd libfastcommon && ./make.sh clean && ./make.sh && sudo ./make.sh install
 
 # step 2. compile && install libshmcache
 git clone https://github.com/happyfish100/libshmcache
-cd libshmcache/src && make && sudo make install
-cd tools && make && sudo make install
+cd libshmcache/src && make clean && make && sudo make install
+cd tools && make clean && make && sudo make install
 cd ../..
 
 # step 3. [optional] compile && install libshmcache php extension
